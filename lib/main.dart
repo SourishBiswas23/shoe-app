@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_app/auth/login_page.dart';
-import 'package:shoe_app/auth/sing_up_page.dart';
+import 'package:shoe_app/pages/auth/login_page.dart';
+import 'package:shoe_app/pages/auth/recovery_password.dart';
+import 'package:shoe_app/pages/auth/sign_up_page.dart';
 import 'package:shoe_app/constants.dart';
 
 void main() {
@@ -20,10 +21,11 @@ class MyApp extends StatelessWidget {
           backgroundColor: Constants.scaffoldBackgroundColor,
         ),
       ),
-      home: SignUpPage(),
+      home: LoginPage(),
       routes: {
         LoginPage.routeName: (context) => LoginPage(),
         SignUpPage.routeName: (context) => SignUpPage(),
+        RecoveryPassword.routeName: (context) => RecoveryPassword(),
       },
     );
   }

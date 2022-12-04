@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_app/auth/login_page.dart';
+import 'package:shoe_app/pages/auth/login_page.dart';
 
-import '../widgets/auth/form_input.dart';
-import '../widgets/auth/form_sign_in_button.dart';
-import '../widgets/auth/google_sign_in_button.dart';
+import '../../widgets/auth/form_input.dart';
+import '../../widgets/auth/form_sign_in_button.dart';
+import '../../widgets/auth/google_sign_in_button.dart';
 
 class SignUpPage extends StatelessWidget {
   SignUpPage({super.key});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_app/auth/sing_up_page.dart';
-import '../widgets/auth/form_input.dart';
-import '../widgets/auth/form_sign_in_button.dart';
-import '../widgets/auth/google_sign_in_button.dart';
+import 'package:shoe_app/pages/auth/recovery_password.dart';
+import 'package:shoe_app/pages/auth/sign_up_page.dart';
+import '../../widgets/auth/form_input.dart';
+import '../../widgets/auth/form_sign_in_button.dart';
+import '../../widgets/auth/google_sign_in_button.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -58,10 +59,14 @@ class LoginPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      'Recovery Password',
-                      style: TextStyle(
-                        color: Colors.grey.shade400,
+                    GestureDetector(
+                      onTap: () => Navigator.of(context)
+                          .pushNamed(RecoveryPassword.routeName),
+                      child: Text(
+                        'Recovery Password',
+                        style: TextStyle(
+                          color: Colors.grey.shade400,
+                        ),
                       ),
                     ),
                   ],
