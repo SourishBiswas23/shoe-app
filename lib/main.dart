@@ -3,6 +3,7 @@ import 'package:shoe_app/pages/auth/login_page.dart';
 import 'package:shoe_app/pages/auth/recovery_password.dart';
 import 'package:shoe_app/pages/auth/sign_up_page.dart';
 import 'package:shoe_app/constants.dart';
+import 'package:shoe_app/pages/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,11 +22,12 @@ class MyApp extends StatelessWidget {
           backgroundColor: Constants.scaffoldBackgroundColor,
         ),
       ),
-      home: LoginPage(),
+      home: SplashScreen(),
       routes: {
         LoginPage.routeName: (context) => LoginPage(),
         SignUpPage.routeName: (context) => SignUpPage(),
         RecoveryPassword.routeName: (context) => RecoveryPassword(),
+        SplashScreen.routeName: (context) => const SplashScreen(),
       },
     );
   }
