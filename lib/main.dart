@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:shoe_app/firebase_options.dart';
 import 'package:shoe_app/screens/auth/login_page.dart';
 import 'package:shoe_app/screens/auth/recovery_password.dart';
 import 'package:shoe_app/screens/auth/sign_up_page.dart';
@@ -6,7 +8,9 @@ import 'package:shoe_app/constants.dart';
 import 'package:shoe_app/screens/carousel/carousel.dart';
 import 'package:shoe_app/screens/splash_screen/splash_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 

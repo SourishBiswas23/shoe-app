@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "583308659034",
+    "project_id": "flutter-shoe-app-e0014",
+    "storage_bucket": "flutter-shoe-app-e0014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583308659034:android:da797527a0883272474b63",
+        "android_client_info": {
+          "package_name": "com.example.shoe_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583308659034-c0v2b5ls7740ao40d6f721maq6thmcb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shoe_app",
+            "certificate_hash": "69886c232ae6b66c69ca887ee889f9d1182e3532"
+          }
+        },
+        {
+          "client_id": "583308659034-paulmm3rcf304ldvppncbjdlrcauuieb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxzGiVn4YU7E7XmGilPcU5MxTH8tjPs7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583308659034-paulmm3rcf304ldvppncbjdlrcauuieb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "583308659034-qsnsd8ctrhsr2ket84rc1u1of7kfbqkh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shoeApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
