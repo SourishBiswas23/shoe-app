@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shoe_app/pages/auth/login_page.dart';
-import 'package:shoe_app/pages/auth/recovery_password.dart';
-import 'package:shoe_app/pages/auth/sign_up_page.dart';
+import 'package:shoe_app/screens/auth/login_page.dart';
+import 'package:shoe_app/screens/auth/recovery_password.dart';
+import 'package:shoe_app/screens/auth/sign_up_page.dart';
 import 'package:shoe_app/constants.dart';
-import 'package:shoe_app/pages/splash_screen/splash_screen.dart';
+import 'package:shoe_app/screens/carousel/carousel.dart';
+import 'package:shoe_app/screens/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,12 +23,13 @@ class MyApp extends StatelessWidget {
           backgroundColor: Constants.scaffoldBackgroundColor,
         ),
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
       routes: {
         LoginPage.routeName: (context) => LoginPage(),
         SignUpPage.routeName: (context) => SignUpPage(),
         RecoveryPassword.routeName: (context) => RecoveryPassword(),
         SplashScreen.routeName: (context) => const SplashScreen(),
+        Carousel.routeName: (context) => const Carousel(),
       },
     );
   }

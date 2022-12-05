@@ -6,4 +6,6 @@ class Constants {
   static const cursorColor = Colors.black;
   static const textFormFieldcolor = Colors.white;
   static const buttonColor = Color(0xFF5B9EE1);
+  static const dotActiveColor = Color(0xFF5B9EE1);
+  static const dotInactiveColor = Color(0xFFE5EEF7);
 }
